@@ -1,0 +1,20 @@
+<table class="table table-striped text-center">
+    <thead class="table-dark">
+      <tr>
+        
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Quantity</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of shoplist">
+        
+        <td>{{producto.name}}</td>
+        <td>{{producto.age}}</td>
+        <td>{{producto.quantity}}</td>
+        <td><button class="btn btn-success" (click)="quitar(producto)">quitar</button></td>
+      </tr>
+    </tbody>
+  </table>
